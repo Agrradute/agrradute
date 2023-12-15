@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #e0f6cb;
+}
+a{
+    text-decoration: none;
+}
+.head{
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 2rem;
+    height: 5rem;
+    margin: 0 auto;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navItem{
+    padding: 0 1rem;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: color 0.2s;
+}
+.navItem:hover{
+    cursor: pointer;
+    color: #395bcc;
+}
+.mainLogo{
+    display: flex;
+    align-items: center;
+}
+.mainLogo:hover{
+    cursor: pointer;
+}
+.logoImg{
+    height: 4rem;
+}
+.logoTxt{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 0.5rem;
+}
+.btnContainer{
+    display: flex;
+    align-items: center;
+}
+.reachBtn{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0d51f1;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.2s;
+}
+.reachBtn:hover{
+    background-color: #1147c4;
+    cursor: pointer;
+}
+
+
+/* Content */
+.mainSec{
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem auto;
+}
+.leftSec{
+    display: flex;
+    flex-direction: column;
+}
+.lfTitle{
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #232323;
+}
+.lfTxt{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    color: #484848;
+    padding: 1rem 2rem 2rem 0;
+}
+.imageContainer{
+    padding: 1rem;
+}
+.rsImg{
+    border-radius: 8px;
+    width: 20rem;
+    box-shadow: 2px 2px 6px 0;
+}
