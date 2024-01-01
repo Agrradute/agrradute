@@ -1,10 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     height: 100vh;
-    width: 100vw;
     background-color: #e0f6cb;
 }
 a{
@@ -26,7 +26,7 @@ a{
 }
 .navItem{
     padding: 0 1rem;
-    color: #000;
+    color: #222222;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: color 0.2s;
 }
@@ -100,5 +100,60 @@ a{
 .rsImg{
     border-radius: 8px;
     width: 20rem;
-    box-shadow: 2px 2px 6px 0;
 }
+
+/* Styling Footer */
+.footer{
+    display: flex;
+    padding: 1rem 3rem;
+}
+.first{
+    flex: 2;
+}
+.details{
+    padding-top: 0.5rem;
+}
+.detailItem{
+    display: flex;
+    padding: 0.3rem 0;
+}
+.detailHead{
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 1.02rem;
+    padding: 0rem 0.5rem;
+}
+.detailTxt{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.02rem;
+    color: #484848;
+}
+.Second{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fooHead{
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+.eachLink{
+    padding: 0.2rem 0;
+}
+.footLink{
+    font-family: Cambria, Georgia,  serif;
+    font-size: 1.07rem;
+    color: #484848;
+    transition: color 0.2s;
+}
+.footLink:hover{
+    cursor: pointer;
+    color: #1238e3;
+}
+.third{
+    flex: 3;
+}
+
