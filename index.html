@@ -1,113 +1,350 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Agrradute</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Title -->
+    <title>Agrradute Club</title>
+
+    <meta name="description"
+        content="Agrradute Club, a sports &amp; cultural club of Nandigram, Kolkata-700 053. The organization was established in the year 1952.">
+    <meta name="keywords"
+        content="agrradute club, agrradute club in nandigram, club, sports &amp; cultural club, nandigram, club in nandigram, sangha, sports &amp; cultural club in nandigram">
+    <meta name="&rdquo;robots&rdquo;" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/icon/man-icon.png" type="image/x-icon">
+    
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/css-bootstrap.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="css/css-animate.min.css">
+    <!-- Fontawesome css -->
+    <link rel="stylesheet" href="css/css-fontawesome.all.min.css">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href="css/css-owl.carousel.min.css">
+    <!-- owl.theme.default css -->
+    <link rel="stylesheet" href="css/css-owl.theme.default.min.css">
+    <!-- Magnific popup css -->
+    <link rel="stylesheet" href="css/css-magnific-popup.min.css">
+    <!-- navber css -->
+    <link rel="stylesheet" href="css/css-navber.css">
+    <!-- meanmenu css -->
+    <link rel="stylesheet" href="css/css-meanmenu.css">
+    <!-- Style css -->
+    <link rel="stylesheet" href="css/css-style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/css-responsive.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.jfif">
+
+    <style>
+        @media screen and (min-width: 800px) {
+            .navbar-nav {
+                margin-left: 100px;
+            }
+
+            #durga_img {
+                display: none;
+            }
+        }
+
+        #home_one_banner {
+
+            padding: 60px 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background: linear-gradient(to right, #3e0001, #630100,#7c0000,#a80202,#e52a03); */
+            background: linear-gradient(90deg, #FF3F3F 0%, #FF993B 100%);
+        }
+
+        #common_banner_area {
+            padding: 60px 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background: linear-gradient(to right, #3e0001, #630100, #7c0000, #a80202, #e52a03);
+        }
+
+        #trending_causes {
+            background: linear-gradient(to left, #3e0001, #630100, #7c0000, #a80202, #e52a03);
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <header class="head">
-            <div class="mainLogo">
-                <img class="logoImg" src="./img/Agrradute-modified.png" alt="">
-                <div class="logoTxt">
-                    <p>Agrradute</p>
-                    <p>Club</p>
-                </div>
-            </div>
-            <nav class="navBar">
-                <a href="#" class="navItem">Home</a>
-                <a href="#" class="navItem">About</a>
-                <a href="#" class="navItem">Contact</a>
-                <a href="#" class="navItem">Future</a>
-            </nav>
-            <div class="btnContainer">
-                <button class="reachBtn">
-                    Reach Us
-                </button>
-            </div>
-        </header>
-        <section id="main">
-            <div class="mainSec">
-                <div class="leftSec">
-                    <div class="lfTitle">
-                        <p>
-                            Lorem ipsum dolor sit amet.
-                        </p>
-                    </div>
-                    <div class="lfTxt">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, corrupti! Temporibus
-                            tempore dolorem, fugit ea nam in, reprehenderit id nobis illo culpa porro, non quaerat!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, ea? Aliquam velit ut
-                            nihil voluptatem dolore amet inventore repellat reiciendis odio! Doloremque quam neque
-                            rerum? Nemo iusto perferendis ipsa obcaecati optio. Facere repudiandae eaque animi assumenda
-                            ratione odit, obcaecati harum soluta deserunt, molestias voluptate, sint qui minus incidunt
-                            vel corrupti.
-                        </p>
+    <!-- Header Area -->
+    <header class="main_header_arae"></header>
+    <script>
+        fetch('components/header.html')
+            .then(res => res.text())
+            .then(text => {
+                let oldelem = document.querySelector(".main_header_arae");
+                let newelem = document.createElement("div");
+                newelem.innerHTML = text;
+                oldelem.parentNode.replaceChild(newelem, oldelem);
+            })
+    </script>
+    
+
+    <!-- Banner Area -->
+    <section id="home_one_banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="banner_one_text">
+
+                        <img src="images/manasa.png" width="450" alt="img" id="durga_img" style="margin-top: -150px;">
+
+
+                        <h1 style="color:white;">Best <span><span style="z-index: 0 !important;"
+                                    class="color_big">Sports &amp; Cultural club</span></span> in Nandigram</h1>
+                        <p style="color:white;">Nandigram, Tajpur, Purba Medinipur, Pin - 721656<br>
+                            Established in 2004</p>
                     </div>
                 </div>
-                <div class="rightSec">
-                    <div class="imageContainer">
-                        <img class="rsImg" src="./img/manasa.png" alt="">
+                <div class="col-lg-6">
+                    <div class="banner_one_img">
+                        <img src="images/manasa.png" width="450" alt="img">
+
                     </div>
                 </div>
             </div>
-        </section>
-        <footer class="footer">
-            <section class="first">
-                <div class="mainLogo">
-                    <img class="logoImg" src="./img/Agrradute-modified.png" alt="">
-                    <div class="logoTxt">
-                        <p>Agrradute</p>
-                        <p>Club</p>
+        </div>
+    </section>
+
+    <!-- About Area -->
+    <section id="about_area" class="section_padding_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="about_area_img">
+                        <img id="flag-gallary" src="images/flag-gallary.jpg" alt="img">
                     </div>
                 </div>
-                <div class="details">
-                    <div class="detailItem">
-                        <div class="detailHead">
-                            Phone:
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="about_area_main_text">
+                        <div class="about_area_heading">
+                            <img src="images/icon-about.png" alt="img">
+                            <h3>Welcome to Agrradute Club</h3>
                         </div>
-                        <div class="detailTxt">+91 9999999999</div>
-                    </div>
-                    <div class="detailItem">
-                        <div class="detailHead">Email:</div>
-                        <div class="detailTxt">
-                            hello_email@gmail.com
+                        <div class="about_area_heading_two">
+                            <h2>Sports &amp; Cultural club in Nandigram</h2>
+                            <h3>Experience Diversity, Celebrate Unity: Join our Cultural Club!</h3>
+                        </div>
+                        <div class="about_area_para">
+                            <h5>Agrradute club, a sports &amp; cultural club of Nandigram, having its own playground and all the other facility. The organization was
+                                established in the year 2004.</h5>
+
+                        </div>
+                        <div class="about_vedio_area">
+                            <a href="contact.html" class="btn btn_theme btn_md">Contact Us</a>
+
                         </div>
                     </div>
-                    <div class="detailItem">
-                        <div class="detailHead">Address:</div>
-                        <div class="detailTxt">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure perferendis quam nulla qui assumenda ex nostrum necessitatibus architecto quod aliquid?
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending causes Area -->
+    <section id="trending_causes" class="section_after section_padding bg-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-12 col-sm-12 col-12">
+                    <div class="section_heading">
+                        <h3 class="text-white">Where Art Meets Inspiration: Explore Our Gallery Collections Today!</h3>
+                        <h2 class="text-white">Gallery Collections</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="counter">
+
+
+
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="case_boxed_wrapper">
+                        <div class="case_boxed_img">
+                            <a href="view_gallery?id=1.html"><img height="420px"
+                                    src="images/pandal-gallary.jpg"
+                                    alt="img"></a>
+                            <span class="causes_badge bg-theme">Pooja</span>
+                        </div>
+                        <div class="causes_boxed_text">
+
+                            <h3><a href="view_gallery?id=1.html">Manasa Pooja 2023</a></h3>
+
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="Second">
-                <div class="fooHead">
-                    Quick Links
+
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <center>
+        <button class="btn btn_theme btn_md" onclick="location.href='/gallery.html'">Explore Our Gallery</button>
+    </center>
+
+    <!-- Upcoming Events Area -->
+    <section id="upcoming_events" class="section_padding_bottom" style="margin-top: 20px !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-12 col-sm-12 col-12">
+                    <div class="section_heading">
+                        <h3>Our events</h3>
+                        <h2>Join our upcoming
+                            <span class="color_big_heading">events</span> for contribution
+                        </h2>
+                    </div>
                 </div>
-                <div class="fooLinks">
-                    <div class="eachLink"><a href="#" class="footLink">Home</a></div>
-                    <div class="eachLink"><a href="#" class="footLink">About</a></div>
-                    <div class="eachLink"><a href="#" class="footLink">Contact</a></div>
-                    <div class="eachLink"><a href="#" class="footLink">Future</a></div>
+            </div>
+            <div class="row">
+
+
+
+
+
+                <div class="event_left_side_wrapper col-lg-5" style="margin: 20px 20px;">
+                    <div class="event_content_area small_content_padding">
+                        <div class="event_tag_area">
+                            <a href="#">#pooja</a>
+                        </div>
+                        <div class="event_heading_area">
+                            <div class="event_heading">
+                                <h3><a href="#">Manasa pooja</a></h3>
+                            </div>
+                            <div class="event_date">
+                                <img src="images/icon-date.png" alt="icon">
+                                <h6>Event</h6>
+                            </div>
+                        </div>
+                        <div class="event_para">
+                            <p>We celebrate Manasa Puja the goddess of snake. Please note the date and don't forget to come and enjoy.</p>
+                        </div>
+                        <div class="event_boxed_bottom_wrapper">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                    <div class="event_bottom_boxed">
+                                        <div class="event_bottom_icon">
+                                            <img src="images/icon-map.png" alt="icon">
+                                        </div>
+                                        <div class="event_bottom_content">
+                                            <h5>Location:</h5>
+                                            <p>Nandigram</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                    <div class="event_bottom_boxed">
+                                        <div class="event_bottom_icon">
+                                            <img src="images/icon-clock.png" alt="icon">
+                                        </div>
+                                        <div class="event_bottom_content">
+                                            <h5>Starts on:</h5>
+                                            <p>20-04-2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
-            <section class="third">
-                <div class="fooHead">
-                    Future
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Area -->
+    <footer id="footer_area"></footer>
+    <script>
+        fetch('components/footer.html')
+            .then(res => res.text())
+            .then(text => {
+                let oldelem = document.querySelector("#footer_area");
+                let newelem = document.createElement("div");
+                newelem.innerHTML = text;
+                oldelem.parentNode.replaceChild(newelem, oldelem);
+            })
+    </script>
+
+    <!-- Copyright Area -->
+    <div class="copyright_area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="co-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="copyright_left">
+                        <p>Copyright &copy; 2024 All Rights Reserved</p>
+                    </div>
                 </div>
-                <div class="detailTxt">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsa deleniti culpa animi beatae eveniet in rerum tempore nulla est velit, vitae perspiciatis assumenda eum accusamus explicabo? Numquam, earum assumenda!
+                <div class="co-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="copyright_right">
+                        <ul>
+                            <li>
+                                <a href="#!"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#!"><i class="fab fa-twitter-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#!"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#!"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </section>
-        </footer>
+            </div>
+        </div>
     </div>
+    <!-- Top To Bottom Area -->
+
+
+    <style>
+        .wa-chat-box-poweredby {
+            display: none;
+        }
+    </style>
+    <div class="go-top">
+        <i class="fas fa-chevron-up"></i>
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <script src="js/js-jquery.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/js-bootstrap.bundle.js"></script>
+    <!-- Meanu js -->
+    <script src="js/js-jquery.meanmenu.js"></script>
+    <!-- Magnific Popup js -->
+    <script src="js/js-jquery.magnific-popup.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="js/js-owl.carousel.min.js"></script>
+    <!-- wow.js -->
+    <script src="js/js-wow.min.js"></script>
+    <!-- waypoints.js -->
+    <script src="js/js-waypoints.min.js"></script>
+    <!-- counterup.js -->
+    <script src="js/js-jquery.counterup.min.js"></script>
+    <!-- Custom js -->
+    <script src="js/js-custom.js"></script>
+    <script src="js/js-custom-progress-bar.js"></script>
+    <script src="js/js-custom-scroll-count.js"></script>
+    <script src="js/js-video.js"></script>
+
 </body>
+
 
 </html>
